@@ -1,0 +1,12 @@
+[submodule "2019/Homework/team-2/emissions-library"]
+	path = 2019/Homework/team-2/emissions-library
+	url = https://github.com/gretzkiy/emissions-library.git
+[submodule "2019/Homework/team-2/emissions-input"]
+	path = 2019/Homework/team-2/emissions-input
+	url = https://github.com/gretzkiy/emissions-input.git
+[submodule "2019/Homework/team-2/emissions-service"]
+	path = 2019/Homework/team-2/emissions-service
+	url = https://github.com/gretzkiy/emissions-service.git
+[submodule "2019/Homework/team-2/emissions-web"]
+	path = 2019/Homework/team-2/emissions-web
+	url = https://github.com/gretzkiy/emissions-web.git
