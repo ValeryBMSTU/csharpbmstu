@@ -20,12 +20,13 @@
 
 ## Инструкция по запуску проекта
 
-1. Создать БД в SQL EXPRESS из скрипта [dbCreateScript.sql](./dbCreateScript.sql) Название созданной БД - `Emissions`. Строка подключения к ней прописана в файлах `App.config` в проектах `EmissionsInput` и `EmissionsService`.
-2. Собрать библиотеку классов EmissionsLibrary.
-3. Обновить ссылку на EmissionsLibrary в проекте EmissionsInput (Указать путь к dll-файлу). Восстановить пакеты NuGet (Управление пакетами nuget -> Восстановить).
-4. Запустить EmissionsInput, БД должна проиницилизироваться (только при первом запуске).
-5. Обновить ссылку на EmissionsLibrary в проекте EmissionsWeb. Восстановить пакеты NuGet.
-6. Запустить EmissionsWeb.
-7. Обновить ссылку на EmissionsLibrary в проекте EmissionsService. Восстановить пакеты NuGet.
-8. Собрать и установить EmissionsService в качестве службы windows. Для корректного запуска службы необходимо выбрать учетную запись пользователя в настройках службы (название службы - `Emissions Reader`).
-9. Запустить EmissionsService.
+1. Проект содержит git submodules, поэтому после переключения в ветку `team-2` необходимо скачать все модули командой `git submodule update --init`, находясь в корне проекта.
+2. Создать БД в SQL EXPRESS из скрипта [dbCreateScript.sql](./dbCreateScript.sql) Название созданной БД - `Emissions`. Строка подключения к ней прописана в файлах `App.config` в проектах `EmissionsInput` и `EmissionsService`.
+3. Собрать библиотеку классов EmissionsLibrary.
+4. Обновить ссылку на EmissionsLibrary в проекте EmissionsInput (Указать путь к dll-файлу). Восстановить пакеты NuGet (Управление пакетами nuget -> Восстановить).
+5. Запустить EmissionsInput, БД должна проиницилизироваться (только при первом запуске).
+6. Обновить ссылку на EmissionsLibrary в проекте EmissionsWeb. Восстановить пакеты NuGet.
+7. Запустить EmissionsWeb.
+8. Обновить ссылку на EmissionsLibrary в проекте EmissionsService. Восстановить пакеты NuGet.
+9. Собрать и установить EmissionsService в качестве службы windows. Для корректного запуска службы необходимо выбрать учетную запись пользователя в настройках службы (название службы - `Emissions Reader`).
+10. Запустить EmissionsService.
